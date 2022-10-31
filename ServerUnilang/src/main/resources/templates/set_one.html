@@ -1,0 +1,65 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unilang</title>
+    <link th:href="@{styles/main.css}" rel="stylesheet"/>
+    <link th:href="@{styles/logo.css}" rel="stylesheet"/>
+    <link th:href="@{styles/buttons.css}" rel="stylesheet"/>
+    <link th:href="@{styles/set_one.css}" rel="stylesheet"/>
+    <link th:href="@{styles/selector.css}" rel="stylesheet"/>
+    <link th:href="@{styles/input.css}" rel="stylesheet"/>
+
+    <link rel="icon" type="image/x-icon" th:href="@{https://i.ibb.co/60hYFfb/u.png}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div>
+    <div class="brand">
+        <div th:replace="fragments/logo"></div>
+    </div>
+</div>
+<div th:replace="fragments/header :: header"></div>
+
+<div class="content">
+
+    <div class="title">
+        Набор карточек
+    </div>
+
+    <div class="blocks">
+
+        <ul class="set">
+            <li>
+                <div>
+                    <h3>Количество слов</h3>
+                    <h3>Источник слов</h3>
+                </div>
+            </li>
+
+            <li style="float: right">
+                <div class="card">
+                    <h3>Изучаемое слово</h3>
+                    <div class="group-card-buttons">
+                        <!-- <img class="avatar" src="image/Right.png"/> -->
+                        <button class="button-card button-right"></button>
+                        <button class="button-card button-left"></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="group-buttons-action">
+            <button id="action-update" class="btn-card-action btn-update"
+                    onclick="location.href='update-set.html';"></button>
+            <button id="action-delete_card" class="btn-card-action btn-delete"></button>
+
+        </div>
+    </div>
+
+</div>
+
+<div th:replace="fragments/footer"></div>
+
+<script src="script/auth.js" type="text/javascript"></script>
+</body>
+</html>

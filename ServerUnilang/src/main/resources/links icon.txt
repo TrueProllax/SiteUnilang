@@ -1,0 +1,15 @@
+star https://ie.wampi.ru/2022/10/28/star7b2d8e04051c9001.png 
+like https://im.wampi.ru/2022/10/28/like_yellow4acf52fe89e14194.png
+yandex https://i.ibb.co/fkZLCtD/yandex.png
+google https://i.ibb.co/SmGx5t8/google.png
+
+image:
+
+https://i.ibb.co/mDPWcKd/art1.webp
+https://i.ibb.co/mXPFjNq/art2.webp
+https://i.ibb.co/7CL5m8b/card.png
+https://i.ibb.co/GF4gwNQ/hello.jpg
+https://i.ibb.co/mbLcFTL/rabbit.jpg
+
+site: 
+https://ibb.co/album/jPsLL4

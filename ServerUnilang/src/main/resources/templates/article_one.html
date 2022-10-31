@@ -1,0 +1,876 @@
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unilang</title>
+    
+    <link th:href="@{styles/comments.css}" rel="stylesheet"/>
+    <link th:href="@{styles/main.css}" rel="stylesheet"/>
+    <link th:href="@{styles/logo.css}" rel="stylesheet"/>
+    <link th:href="@{styles/article_one.css}" rel="stylesheet"/>
+    <link th:href="@{styles/buttons.css}" rel="stylesheet"/>
+
+
+    <link rel="icon" type="image/x-icon" href="http://placeimg.com/90/90/tech">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+
+    <!--<link rel="icon" type="image/x-icon" href="image/icon/u.png">-->
+</head>
+<body>
+<div>
+    <div class="brand">
+        <div th:replace="fragments/logo"></div>
+    </div>
+</div>
+    
+<div th:replace="fragments/header :: header"></div>
+
+<div class="content">
+
+    <div class="title">
+        The Element That Could Kill Billions but Save Millions
+    </div>
+
+    <div class="poster">
+        <img src="image/art1.webp" class="article_img">
+    </div>
+
+    <div class="blocks">
+
+        <div class="block">
+
+            <div class="block-content">
+                <div class="text">
+
+                    <div id="pageText1" style="opacity: 1; top: 0px; display: block;">
+
+
+                        <p>“
+                        <div data-p="0" class="translating translated">
+                            <div class="translation">Многие</div>
+                            <div class="original">Many</div>
+                        </div>
+                        <span data-p="1">warnings</span> <span data-p="2">have</span> <span data-p="3">been</span> <span
+                            data-p="4">uttered</span> <span data-p="5">by</span> <span data-p="6">eminent</span> <span
+                            data-p="7">men</span> <span data-p="8">of</span> <span data-p="9">science</span> <span
+                            data-p="10">and</span> <span data-p="11">by</span> <span data-p="12">authorities</span>
+                        <span data-p="13">in</span> <span data-p="14">military</span> <span data-p="15">strategy</span>.
+                        <span data-p="16">None</span> <span data-p="17">of</span> <span data-p="18">them</span> <span
+                            data-p="19">will</span> <span data-p="20">say</span> <span data-p="21">that</span> <span
+                            data-p="22">the</span> <span data-p="23">worst</span> <span data-p="24">results</span> <span
+                            data-p="25">are</span> <span data-p="26">certain</span>. <span data-p="27">What</span> <span
+                            data-p="28">they</span> <span data-p="29">do</span> <span data-p="30">say</span> <span
+                            data-p="31">is</span> <span data-p="32">that</span> <span data-p="33">these</span> <span
+                            data-p="34">results</span> <span data-p="35">are</span> <span data-p="36">possible</span>,
+                        <span data-p="37">and</span> <span data-p="38">no</span> <span data-p="39">one</span> <span
+                            data-p="40">can</span> <span data-p="41">be</span> <span data-p="42">sure</span> <span
+                            data-p="43">that</span> <span data-p="44">they</span> <span data-p="45">will</span> <span
+                            data-p="46">not</span> <span data-p="47">be</span> <span data-p="48">realized</span>.”</p>
+                        <p><span data-p="49">These</span> <span data-p="50">are</span> <span data-p="51">some</span>
+                            <span data-p="52">of</span> <span data-p="53">the</span> <span data-p="54">words</span>
+                            <span data-p="55">from</span> <span data-p="56">the</span> <span
+                                    data-p="57">Russel</span>-<span data-p="58">Einstein</span> <span data-p="59">manifesto</span>
+                            [<span data-p="60">MA</span>1] <span data-p="61">in</span> <span data-p="62">July</span>
+                            <span data-p="63">of</span> 1955 <span data-p="64">aimed</span> <span data-p="65">at</span>
+                            <span data-p="66">warning</span> <span data-p="67">the</span> <span
+                                    data-p="68">public</span> <span data-p="69">about</span> <span
+                                    data-p="70">the</span> <span data-p="71">consequences</span> <span
+                                    data-p="72">of</span> <span data-p="73">a</span> <span data-p="74">nuclear</span>
+                            <span data-p="75">war</span> <span data-p="76">and</span> <span data-p="77">urging</span>
+                            <span data-p="78">countries</span> <span data-p="79">to</span> <span
+                                    data-p="80">embrace</span> <span data-p="81">a</span> <span
+                                    data-p="82">peaceful</span> <span data-p="83">resolution</span> <span data-p="84">during</span>
+                            <span data-p="85">the</span> <span data-p="86">height</span> <span data-p="87">of</span>
+                            <span data-p="88">the</span> <span data-p="89">Cold</span> <span data-p="90">War</span>.
+                            <span data-p="91">To</span> <span data-p="92">an</span> <span data-p="93">extent</span>,
+                            <span data-p="94">we</span> <span data-p="95">can</span> <span data-p="96">say</span> <span
+                                    data-p="97">that</span> <span data-p="98">these</span> <span
+                                    data-p="99">warnings</span> <span data-p="100">were</span> <span
+                                    data-p="101">heeded</span>, <span data-p="102">albeit</span> <span
+                                    data-p="103">only</span> <span data-p="104">partially</span>. <span data-p="105">Today</span>,
+                            <span data-p="106">there</span> <span data-p="107">are</span> <span
+                                    data-p="108">nearly</span> 13,000 <span data-p="109">nuclear</span> <span
+                                    data-p="110">weapons</span> <span data-p="111">in</span> <span
+                                    data-p="112">the</span> <span data-p="113">world</span>. <span
+                                    data-p="114">That</span> <span data-p="115">might</span> <span
+                                    data-p="116">sound</span> <span data-p="117">like</span> <span data-p="118">a</span>
+                            <span data-p="119">lot</span>, <span data-p="120">until</span> <span data-p="121">you</span>
+                            <span data-p="122">realize</span> <span data-p="123">that</span> <span
+                                    data-p="124">during</span> <span data-p="125">the</span> <span
+                                    data-p="126">peak</span> <span data-p="127">of</span> <span data-p="128">the</span>
+                            <span data-p="129">Cold</span> <span data-p="130">War</span>, <span data-p="131">the</span>
+                            <span data-p="132">world</span> <span data-p="133">possessed</span> <span
+                                    data-p="134">a</span> <span data-p="135">whopping</span> 70,000 <span data-p="136">nuclear</span>
+                            <span data-p="137">weapons</span> [<span data-p="138">MA</span>2]. </p>
+                        <p><span data-p="139">And</span> <span data-p="140">while</span> <span data-p="141">the</span>
+                            <span data-p="142">decline</span> <span data-p="143">is</span> <span
+                                    data-p="144">certainly</span> <span data-p="145">a</span> <span data-p="146">positive</span>
+                            <span data-p="147">trend</span>, <span data-p="148">one</span> <span data-p="149">has</span>
+                            <span data-p="150">to</span> <span data-p="151">bear</span> <span data-p="152">in</span>
+                            <span data-p="153">mind</span> <span data-p="154">that</span> <span data-p="155">the</span>
+                            <span data-p="156">bombs</span> <span data-p="157">developed</span> <span
+                                    data-p="158">more</span> <span data-p="159">recently</span> <span
+                                    data-p="160">are</span> <span data-p="161">orders</span> <span
+                                    data-p="162">of</span> <span data-p="163">magnitude</span> <span
+                                    data-p="164">more</span> <span data-p="165">powerful</span> <span
+                                    data-p="166">than</span> <span data-p="167">those</span> <span
+                                    data-p="168">during</span> <span data-p="169">nuclear</span> <span data-p="170">technology’s</span>
+                            <span data-p="171">infancy</span>. <span data-p="172">Russia’s</span> <span data-p="173">infamous</span>
+                            <span data-p="174">Tsar</span> <span data-p="175">Bomba</span>, <span
+                                    data-p="176">the</span> <span data-p="177">most</span> <span
+                                    data-p="178">powerful</span> <span data-p="179">nuclear</span> <span data-p="180">weapon</span>
+                            <span data-p="181">that</span> <span data-p="182">has</span> <span data-p="183">ever</span>
+                            <span data-p="184">been</span> <span data-p="185">tested</span>, <span
+                                    data-p="186">has</span> <span data-p="187">a</span> <span data-p="188">blast</span>
+                            <span data-p="189">yield</span> 3,330 <span data-p="190">times</span> <span data-p="191">stronger</span>
+                            <span data-p="192">than</span> <span data-p="193">the</span> <span data-p="194">bomb</span>
+                            <span data-p="195">that</span> <span data-p="196">was</span> <span
+                                    data-p="197">dropped</span> <span data-p="198">on</span> <span data-p="199">Hiroshima</span>.
+                            <span data-p="200">Worst</span> <span data-p="201">of</span> <span data-p="202">all</span>,
+                            <span data-p="203">for</span> <span data-p="204">all</span> <span data-p="205">we</span>
+                            <span data-p="206">know</span>, <span data-p="207">there</span> <span
+                                    data-p="208">could</span> <span data-p="209">still</span> <span
+                                    data-p="210">be</span> <span data-p="211">a</span> <span data-p="212">bomb</span>
+                            <span data-p="213">more</span> <span data-p="214">powerful</span> <span
+                                    data-p="215">than</span> <span data-p="216">this</span> <span
+                                    data-p="217">that</span> <span data-p="218">has</span> <span
+                                    data-p="219">just</span> <span data-p="220">never</span> <span
+                                    data-p="221">been</span> <span data-p="222">tested</span> <span
+                                    data-p="223">before</span>. </p>
+                        <p><span data-p="224">So</span>, <span data-p="225">in</span> <span data-p="226">reality</span>,
+                            <span data-p="227">although</span> <span data-p="228">we</span> <span
+                                    data-p="229">have</span> <span data-p="230">substantially</span> <span data-p="231">fewer</span>
+                            <span data-p="232">warheads</span>, <span data-p="233">we</span> <span
+                                    data-p="234">are</span> <span data-p="235">no</span> <span
+                                    data-p="236">farther</span> <span data-p="237">from</span> <span
+                                    data-p="238">total</span> <span data-p="239">obliteration</span> <span data-p="240">than</span>
+                            <span data-p="241">we</span> <span data-p="242">were</span> <span data-p="243">when</span>
+                            <span data-p="244">we</span> <span data-p="245">had</span> 70,000 <span
+                                    data-p="246">nukes</span>. <span data-p="247">This</span> <span
+                                    data-p="248">threat</span> <span data-p="249">of</span> <span
+                                    data-p="250">nuclear</span> <span data-p="251">extinction</span> <span data-p="252">all</span>
+                            <span data-p="253">started</span> <span data-p="254">when</span> <span data-p="255">U</span>.<span
+                                    data-p="256">S</span>. <span data-p="257">president</span> <span data-p="258">Franklin</span>
+                            <span data-p="259">D</span>. <span data-p="260">Roosevelt</span> <span
+                                    data-p="261">set</span> <span data-p="262">up</span> <span data-p="263">the</span>
+                            <span data-p="264">Advisory</span> <span data-p="265">Committee</span> <span
+                                    data-p="266">on</span> <span data-p="267">Uranium</span> <span
+                                    data-p="268">in</span> 1939 <span data-p="269">in</span> <span
+                                    data-p="270">fear</span> <span data-p="271">that</span> <span
+                                    data-p="272">Adolf</span> <span data-p="273">Hitler</span> <span
+                                    data-p="274">had</span> <span data-p="275">already</span> <span
+                                    data-p="276">started</span> <span data-p="277">developing</span> <span data-p="278">nuclear</span>
+                            <span data-p="279">weapons</span> <span data-p="280">in</span> <span
+                                    data-p="281">Germany</span>[<span data-p="282">MA</span>4]. <span
+                                    data-p="283">This</span> <span data-p="284">committee</span>, <span data-p="285">later</span>
+                            <span data-p="286">renamed</span> <span data-p="287">the</span> <span
+                                    data-p="288">Office</span> <span data-p="289">of</span> <span data-p="290">Scientific</span>
+                            <span data-p="291">Research</span> <span data-p="292">and</span> <span data-p="293">Development</span>
+                            (<span data-p="294">OSRD</span>) <span data-p="295">in</span> 1941, <span
+                                    data-p="296">would</span> <span data-p="297">eventually</span> <span data-p="298">create</span>
+                            <span data-p="299">the</span> <span data-p="300">famous</span> <span
+                                    data-p="301">Manhattan</span> <span data-p="302">Project</span> <span data-p="303">that</span>
+                            <span data-p="304">would</span> <span data-p="305">give</span> <span
+                                    data-p="306">America</span> <span data-p="307">its</span> <span
+                                    data-p="308">first</span> <span data-p="309">nuclear</span> <span data-p="310">weapons</span>.
+                        </p>
+                        <p><span data-p="311">The</span> <span data-p="312">material</span> <span data-p="313">at</span>
+                            <span data-p="314">the</span> <span data-p="315">center</span> <span data-p="316">of</span>
+                            <span data-p="317">its</span> <span data-p="318">research</span> <span
+                                    data-p="319">was</span>, <span data-p="320">as</span> <span data-p="321">its</span>
+                            <span data-p="322">original</span> <span data-p="323">name</span> <span data-p="324">suggests</span>,
+                            <span data-p="325">uranium</span> [<span data-p="326">MA</span>5] . <span data-p="327">Uranium’s</span>
+                            <span data-p="328">explosive</span> <span data-p="329">potential</span> <span data-p="330">comes</span>
+                            <span data-p="331">from</span> <span data-p="332">its</span> <span
+                                    data-p="333">fissile</span> <span data-p="334">nature</span> - <span data-p="335">meaning</span>
+                            <span data-p="336">that</span> <span data-p="337">it</span> <span data-p="338">can</span>
+                            <span data-p="339">be</span> <span data-p="340">split</span> <span data-p="341">apart</span>
+                            <span data-p="342">in</span> <span data-p="343">just</span> <span data-p="344">the</span>
+                            <span data-p="345">right</span> <span data-p="346">way</span> <span data-p="347">that</span>
+                            <span data-p="348">it</span> <span data-p="349">leads</span> <span data-p="350">to</span>
+                            <span data-p="351">a</span> <span data-p="352">chain</span> <span
+                                    data-p="353">reaction</span>. <span data-p="354">A</span> <span
+                                    data-p="355">free</span> <span data-p="356">neutron</span> <span
+                                    data-p="357">bumps</span> <span data-p="358">into</span> <span data-p="359">a</span>
+                            <span data-p="360">U</span>-235 <span data-p="361">atom</span>, <span data-p="362">it</span>
+                            <span data-p="363">splits</span> <span data-p="364">up</span> <span data-p="365">and</span>
+                            <span data-p="366">leads</span> <span data-p="367">to</span> <span data-p="368">other</span>
+                            <span data-p="369">free</span> <span data-p="370">neutrons</span>, <span
+                                    data-p="371">which</span> <span data-p="372">in</span> <span
+                                    data-p="373">turn</span> <span data-p="374">bump</span> <span
+                                    data-p="375">into</span> <span data-p="376">other</span> <span
+                                    data-p="377">atoms</span>, <span data-p="378">so</span> <span data-p="379">on</span>
+                            <span data-p="380">and</span> <span data-p="381">so</span> <span data-p="382">forth</span>.
+                            <span data-p="383">Each</span> <span data-p="384">of</span> <span data-p="385">these</span>
+                            <span data-p="386">processes</span> <span data-p="387">releases</span> <span data-p="388">large</span>
+                            <span data-p="389">quantities</span> <span data-p="390">of</span> <span
+                                    data-p="391">energy</span>, <span data-p="392">which</span> <span
+                                    data-p="393">is</span> <span data-p="394">where</span> <span data-p="395">the</span>
+                            <span data-p="396">explosive</span> <span data-p="397">ability</span> <span
+                                    data-p="398">of</span> <span data-p="399">uranium</span> <span
+                                    data-p="400">comes</span> <span data-p="401">from</span>. </p>
+                        <p><span data-p="402">The</span> <span data-p="403">more</span> <span
+                                data-p="404">populated</span> <span data-p="405">your</span> <span
+                                data-p="406">target</span> <span data-p="407">space</span> <span data-p="408">is</span>
+                            <span data-p="409">with</span> <span data-p="410">eager</span> <span
+                                    data-p="411">fissile</span> <span data-p="412">U</span>-235 <span
+                                    data-p="413">atoms</span>, <span data-p="414">the</span> <span
+                                    data-p="415">more</span> <span data-p="416">destructive</span> <span data-p="417">the</span>
+                            <span data-p="418">reaction’s</span> <span data-p="419">outcome</span>. <span data-p="420">This</span>
+                            <span data-p="421">is</span> <span data-p="422">why</span> <span data-p="423">nuclear</span>
+                            <span data-p="424">weapons</span> <span data-p="425">commonly</span> <span
+                                    data-p="426">use</span> <span data-p="427">enriched</span> <span data-p="428">uranium</span>
+                            <span data-p="429">as</span> <span data-p="430">opposed</span> <span data-p="431">to</span>
+                            <span data-p="432">naturally</span> <span data-p="433">occurring</span> <span data-p="434">uranium</span>
+                            <span data-p="435">ore</span>. <span data-p="436">Of</span> <span data-p="437">course</span>,
+                            <span data-p="438">uranium</span> <span data-p="439">is</span> <span data-p="440">not</span>
+                            <span data-p="441">the</span> <span data-p="442">only</span> <span data-p="443">fuel</span>
+                            <span data-p="444">for</span> <span data-p="445">nuclear</span> <span
+                                    data-p="446">weapons</span>. <span data-p="447">The</span> <span
+                                    data-p="448">Tsar</span> <span data-p="449">Bomba</span> <span
+                                    data-p="450">was</span> <span data-p="451">a</span> <span
+                                    data-p="452">hydrogen</span> <span data-p="453">bomb</span>, <span
+                                    data-p="454">for</span> <span data-p="455">example</span>. <span
+                                    data-p="456">But</span> <span data-p="457">the</span> <span
+                                    data-p="458">history</span> <span data-p="459">of</span> <span
+                                    data-p="460">nuclear</span> <span data-p="461">weapons</span> <span data-p="462">starts</span>
+                            <span data-p="463">with</span> <span data-p="464">uranium</span>. <span
+                                    data-p="465">And</span> <span data-p="466">the</span> <span data-p="467">fear</span>
+                            <span data-p="468">of</span> <span data-p="469">nuclear</span> <span
+                                    data-p="470">weapons</span> <span data-p="471">is</span> <span
+                                    data-p="472">not</span> <span data-p="473">just</span> <span
+                                    data-p="474">about</span> <span data-p="475">the</span> <span
+                                    data-p="476">blast</span> <span data-p="477">itself</span>. </p>
+                        <p><span data-p="478">You</span> <span data-p="479">see</span>, <span data-p="480">while</span>
+                            <span data-p="481">Hiroshima</span> <span data-p="482">and</span> <span data-p="483">Nagasaki</span>
+                            <span data-p="484">were</span> <span data-p="485">hit</span> <span data-p="486">with</span>
+                            <span data-p="487">nuclear</span> <span data-p="488">weapons</span>, <span data-p="489">larger</span>
+                            <span data-p="490">cities</span> <span data-p="491">like</span> <span
+                                    data-p="492">Tokyo</span> <span data-p="493">were</span> <span
+                                    data-p="494">leveled</span> <span data-p="495">with</span> <span data-p="496">conventional</span>
+                            <span data-p="497">weapons</span> [<span data-p="498">MA</span>6]. <span
+                                    data-p="499">In</span> <span data-p="500">fact</span>, <span data-p="501">the</span>
+                            <span data-p="502">vast</span> <span data-p="503">majority</span> <span
+                                    data-p="504">of</span> <span data-p="505">loss</span> <span data-p="506">of</span>
+                            <span data-p="507">life</span> <span data-p="508">during</span> <span
+                                    data-p="509">the</span> <span data-p="510">second</span> <span
+                                    data-p="511">world</span> <span data-p="512">war</span> <span
+                                    data-p="513">came</span> <span data-p="514">from</span> <span
+                                    data-p="515">regular</span> <span data-p="516">non</span>-<span
+                                    data-p="517">nuclear</span> <span data-p="518">sources</span>. <span data-p="519">What</span>
+                            <span data-p="520">makes</span> <span data-p="521">the</span> <span
+                                    data-p="522">nuclear</span> <span data-p="523">variety</span> <span
+                                    data-p="524">so</span> <span data-p="525">dangerous</span> <span
+                                    data-p="526">is</span> <span data-p="527">the</span> <span
+                                    data-p="528">impact</span> <span data-p="529">they</span> <span
+                                    data-p="530">can</span> <span data-p="531">have</span> <span
+                                    data-p="532">after</span> <span data-p="533">the</span> <span
+                                    data-p="534">dust</span> <span data-p="535">has</span> <span
+                                    data-p="536">settled</span>. <span data-p="537">Nuclear</span> <span data-p="538">warfare</span>
+                            <span data-p="539">can</span> <span data-p="540">lead</span> <span data-p="541">to</span>
+                            <span data-p="542">thermal</span> <span data-p="543">radiation</span>, <span data-p="544">ionizing</span>
+                            <span data-p="545">radiation</span>, <span data-p="546">and</span> <span data-p="547">electromagnetic</span>
+                            <span data-p="548">impulses</span>. <span data-p="549">It</span> <span
+                                    data-p="550">can</span> <span data-p="551">usher</span> <span data-p="552">in</span>
+                            <span data-p="553">nuclear</span> <span data-p="554">winters</span>, <span data-p="555">impede</span>
+                            <span data-p="556">food</span> <span data-p="557">cycles</span> <span
+                                    data-p="558">and</span> <span data-p="559">cause</span> <span
+                                    data-p="560">anomalies</span> <span data-p="561">in</span> <span data-p="562">fetuses</span>
+                            <span data-p="563">that</span> <span data-p="564">can</span> <span
+                                    data-p="565">manifest</span> <span data-p="566">in</span> <span
+                                    data-p="567">severe</span> <span data-p="568">medical</span> <span data-p="569">issues</span>
+                            <span data-p="570">late</span> <span data-p="571">in</span> <span data-p="572">life</span>.
+                        </p>
+                        <p><span data-p="573">We</span> <span data-p="574">wouldn’t</span> <span
+                                data-p="575">even</span> <span data-p="576">need</span> 1% <span data-p="577">of</span>
+                            <span data-p="578">the</span> <span data-p="579">reduced</span> <span
+                                    data-p="580">nuclear</span> <span data-p="581">arsenal</span> <span
+                                    data-p="582">we</span> <span data-p="583">have</span> <span
+                                    data-p="584">today</span> <span data-p="585">to</span> <span
+                                    data-p="586">disrupt</span> <span data-p="587">the</span> <span
+                                    data-p="588">global</span> <span data-p="589">climate</span> <span
+                                    data-p="590">and</span> <span data-p="591">threaten</span> <span
+                                    data-p="592">the</span> <span data-p="593">lives</span> <span data-p="594">of</span>
+                            <span data-p="595">over</span> <span data-p="596">two</span> <span
+                                    data-p="597">billion</span> <span data-p="598">people</span> [<span
+                                    data-p="599">MA</span>7] <span data-p="600">with</span> <span data-p="601">starvation</span>.
+                            <span data-p="602">A</span> <span data-p="603">hypothetical</span> <span
+                                    data-p="604">war</span> <span data-p="605">between</span> <span
+                                    data-p="606">the</span> <span data-p="607">two</span> <span data-p="608">most</span>
+                            <span data-p="609">powerful</span> <span data-p="610">nuclear</span> <span data-p="611">superpowers</span>,
+                            <span data-p="612">the</span> <span data-p="613">United</span> <span
+                                    data-p="614">States</span> <span data-p="615">and</span> <span
+                                    data-p="616">Russia</span>, <span data-p="617">stands</span> <span
+                                    data-p="618">to</span> <span data-p="619">threaten</span> <span
+                                    data-p="620">all</span> <span data-p="621">ecosystems</span> <span
+                                    data-p="622">on</span> <span data-p="623">which</span> <span
+                                    data-p="624">life</span> <span data-p="625">depends</span>. <span data-p="626">Nuclear</span>
+                            <span data-p="627">weapons</span> <span data-p="628">can</span> <span data-p="629">conceivably</span>
+                            <span data-p="630">kill</span> <span data-p="631">billions</span> <span
+                                    data-p="632">of</span> <span data-p="633">people</span>.</p>
+                        <p><span data-p="634">But</span> <span data-p="635">what</span> <span data-p="636">if</span>
+                            <span data-p="637">I</span> <span data-p="638">told</span> <span data-p="639">you</span>
+                            <span data-p="640">that</span> <span data-p="641">it</span> <span data-p="642">also</span>
+                            <span data-p="643">saves</span> <span data-p="644">millions</span> <span
+                                    data-p="645">of</span> <span data-p="646">lives</span>?</p>
+                        <p><span data-p="647">We</span> <span data-p="648">stand</span> <span data-p="649">at</span>
+                            <span data-p="650">a</span> <span data-p="651">pivotal</span> <span
+                                    data-p="652">point</span> <span data-p="653">in</span> <span data-p="654">the</span>
+                            <span data-p="655">modern</span> <span data-p="656">world</span>. <span
+                                    data-p="657">The</span> <span data-p="658">war</span> <span data-p="659">in</span>
+                            <span data-p="660">Ukraine</span> <span data-p="661">coupled</span> <span
+                                    data-p="662">with</span> <span data-p="663">the</span> <span
+                                    data-p="664">cascading</span> <span data-p="665">effects</span> <span data-p="666">of</span>
+                            <span data-p="667">a</span> <span data-p="668">pandemic</span> <span
+                                    data-p="669">have</span> <span data-p="670">left</span> <span data-p="671">us</span>
+                            <span data-p="672">all</span> <span data-p="673">crippled</span>. <span
+                                    data-p="674">But</span> <span data-p="675">not</span> <span data-p="676">in</span>
+                            <span data-p="677">the</span> <span data-p="678">way</span> <span data-p="679">you</span>
+                            <span data-p="680">might</span> <span data-p="681">think</span>. <span
+                                    data-p="682">The</span> <span data-p="683">invasion</span> <span
+                                    data-p="684">of</span> <span data-p="685">Ukraine</span> <span
+                                    data-p="686">by</span> <span data-p="687">Russia</span> <span
+                                    data-p="688">has</span> <span data-p="689">made</span> <span data-p="690">the</span>
+                            <span data-p="691">entire</span> <span data-p="692">world</span> <span data-p="693">attentive</span>
+                            <span data-p="694">and</span> <span data-p="695">watchful</span>, <span
+                                    data-p="696">not</span> <span data-p="697">only</span> <span data-p="698">of</span>
+                            <span data-p="699">Russia’s</span> <span data-p="700">nuclear</span> <span data-p="701">arsenal</span>,
+                            <span data-p="702">but</span> <span data-p="703">also</span> <span data-p="704">of</span>
+                            <span data-p="705">the</span> <span data-p="706">amount</span> <span data-p="707">of</span>
+                            <span data-p="708">energy</span> <span data-p="709">the</span> <span
+                                    data-p="710">country</span> <span data-p="711">produces</span>, <span data-p="712">and</span>
+                            <span data-p="713">how</span> <span data-p="714">much</span> <span data-p="715">of</span>
+                            <span data-p="716">the</span> <span data-p="717">world</span> <span data-p="718">is</span>
+                            <span data-p="719">dependent</span> <span data-p="720">on</span> <span
+                                    data-p="721">it</span>. <span data-p="722">With</span> <span data-p="723">one</span>
+                            <span data-p="724">of</span> <span data-p="725">the</span> <span
+                                    data-p="726">planet’s</span> <span data-p="727">biggest</span> <span data-p="728">gas</span>
+                            <span data-p="729">providers</span> <span data-p="730">on</span> <span
+                                    data-p="731">many</span> <span data-p="732">countries’</span> <span data-p="733">blacklists</span>,
+                            <span data-p="734">fuel</span> <span data-p="735">prices</span> <span
+                                    data-p="736">are</span> <span data-p="737">skyrocketing</span> <span data-p="738">all</span>
+                            <span data-p="739">around</span> <span data-p="740">the</span> <span
+                                    data-p="741">globe</span>. <span data-p="742">The</span> <span data-p="743">resulting</span>
+                            <span data-p="744">crisis</span> <span data-p="745">has</span> <span
+                                    data-p="746">since</span> <span data-p="747">become</span> <span
+                                    data-p="748">a</span> <span data-p="749">reality</span> <span
+                                    data-p="750">check</span>, <span data-p="751">with</span> <span data-p="752">countries</span>
+                            <span data-p="753">like</span> <span data-p="754">Germany</span> <span data-p="755">accelerating</span>
+                            <span data-p="756">their</span> <span data-p="757">transition</span> <span
+                                    data-p="758">to</span> <span data-p="759">renewable</span> <span
+                                    data-p="760">energy</span>. </p>
+                        <p><span data-p="761">This</span> <span data-p="762">winter</span>, <span
+                                data-p="763">Paris</span> <span data-p="764">will</span> <span data-p="765">turn</span>
+                            <span data-p="766">off</span> <span data-p="767">the</span> <span data-p="768">lights</span>
+                            <span data-p="769">of</span> <span data-p="770">the</span> <span data-p="771">Eiffel</span>
+                            <span data-p="772">Tower</span> <span data-p="773">an</span> <span data-p="774">hour</span>
+                            <span data-p="775">earlier</span>. <span data-p="776">Thermostats</span> <span data-p="777">will</span>
+                            <span data-p="778">be</span> <span data-p="779">limited</span> <span data-p="780">to</span>
+                            19 °<span data-p="781">C</span> <span data-p="782">in</span> <span data-p="783">Spain</span>,
+                            <span data-p="784">and</span> <span data-p="785">restaurants</span> <span
+                                    data-p="786">in</span> <span data-p="787">Italy</span> <span
+                                    data-p="788">have</span> <span data-p="789">switched</span> <span
+                                    data-p="790">to</span> <span data-p="791">candlelight</span> <span data-p="792">dining</span>.
+                            <span data-p="793">It’s</span> <span data-p="794">a</span> <span
+                                    data-p="795">positive</span> <span data-p="796">change</span>, <span data-p="797">one</span>
+                            <span data-p="798">might</span> <span data-p="799">think</span>, <span
+                                    data-p="800">to</span> <span data-p="801">not</span> <span
+                                    data-p="802">depend</span> <span data-p="803">on</span> <span data-p="804">an</span>
+                            <span data-p="805">adversary</span> <span data-p="806">like</span> <span
+                                    data-p="807">Russia</span> <span data-p="808">for</span> <span
+                                    data-p="809">energy</span>. <span data-p="810">However</span>, <span
+                                    data-p="811">we</span> <span data-p="812">are</span> <span data-p="813">not</span>
+                            <span data-p="814">quite</span> <span data-p="815">there</span> <span
+                                    data-p="816">with</span> <span data-p="817">renewables</span> <span data-p="818">just</span>
+                            <span data-p="819">yet</span>. <span data-p="820">Renewables</span> <span
+                                    data-p="821">can</span> <span data-p="822">generate</span> <span
+                                    data-p="823">a</span> <span data-p="824">lot</span> <span data-p="825">of</span>
+                            <span data-p="826">power</span>, <span data-p="827">sometimes</span> <span
+                                    data-p="828">even</span> <span data-p="829">a</span> <span data-p="830">bit</span>
+                            <span data-p="831">too</span> <span data-p="832">much</span>. <span data-p="833">Elon</span>
+                            <span data-p="834">Musk</span> <span data-p="835">has</span> <span data-p="836">said</span>
+                            <span data-p="837">numerous</span> <span data-p="838">times</span> <span
+                                    data-p="839">that</span> <span data-p="840">the</span> <span
+                                    data-p="841">number</span> <span data-p="842">of</span> <span
+                                    data-p="843">solar</span> <span data-p="844">panels</span> <span data-p="845">required</span>
+                            <span data-p="846">might</span> <span data-p="847">actually</span> <span
+                                    data-p="848">be</span> <span data-p="849">surprisingly</span> <span data-p="850">small</span>
+                            <span data-p="851">given</span> <span data-p="852">the</span> <span
+                                    data-p="853">tremendous</span> <span data-p="854">amount</span> <span data-p="855">of</span>
+                            <span data-p="856">energy</span> <span data-p="857">the</span> <span data-p="858">Sun</span>
+                            <span data-p="859">sends</span> <span data-p="860">our</span> <span data-p="861">way</span>
+                            <span data-p="862">every</span> <span data-p="863">day</span>. </p>
+                        <p><span data-p="864">We</span> <span data-p="865">would</span> <span data-p="866">need</span>
+                            <span data-p="867">around</span> 3.2% <span data-p="868">of</span> <span
+                                    data-p="869">the</span> <span data-p="870">landmass</span> <span
+                                    data-p="871">of</span> <span data-p="872">the</span> <span
+                                    data-p="873">United</span> <span data-p="874">States</span> <span
+                                    data-p="875">to</span> <span data-p="876">generate</span> <span
+                                    data-p="877">enough</span> <span data-p="878">electricity</span> <span data-p="879">to</span>
+                            <span data-p="880">power</span> <span data-p="881">the</span> <span
+                                    data-p="882">world</span> [<span data-p="883">MA</span>9] . <span
+                                    data-p="884">While</span> <span data-p="885">that</span> <span
+                                    data-p="886">doesn’t</span> <span data-p="887">sound</span> <span
+                                    data-p="888">too</span> <span data-p="889">bad</span>, <span
+                                    data-p="890">that’s</span> <span data-p="891">equivalent</span> <span data-p="892">to</span>
+                            <span data-p="893">New</span> <span data-p="894">Mexico</span> <span data-p="895">and</span>
+                            <span data-p="896">Arizona</span>, <span data-p="897">two</span> <span
+                                    data-p="898">of</span> <span data-p="899">the</span> <span
+                                    data-p="900">largest</span> <span data-p="901">states</span> <span
+                                    data-p="902">in</span> <span data-p="903">the</span> <span
+                                    data-p="904">country</span>. <span data-p="905">It’s</span> <span
+                                    data-p="906">also</span> <span data-p="907">bigger</span> <span
+                                    data-p="908">than</span> 121 <span data-p="909">countries</span> <span data-p="910">in</span>
+                            <span data-p="911">the</span> <span data-p="912">world</span>. <span data-p="913">Furthermore</span>,
+                            <span data-p="914">to</span> <span data-p="915">harness</span> <span
+                                    data-p="916">this</span> <span data-p="917">power</span>, <span
+                                    data-p="918">solar</span> <span data-p="919">panels</span> <span
+                                    data-p="920">need</span> <span data-p="921">to</span> <span data-p="922">be</span>
+                            <span data-p="923">placed</span> <span data-p="924">where</span> <span
+                                    data-p="925">the</span> <span data-p="926">Sun</span> <span data-p="927">is</span>,
+                            <span data-p="928">wind</span> <span data-p="929">farms</span> <span
+                                    data-p="930">need</span> <span data-p="931">to</span> <span data-p="932">be</span>
+                            <span data-p="933">placed</span> <span data-p="934">where</span> <span
+                                    data-p="935">the</span> <span data-p="936">wind</span> <span data-p="937">is</span>,
+                            <span data-p="938">and</span> <span data-p="939">we</span> <span data-p="940">need</span>
+                            <span data-p="941">a</span> <span data-p="942">way</span> <span data-p="943">to</span> <span
+                                    data-p="944">store</span> <span data-p="945">all</span> <span
+                                    data-p="946">the</span> <span data-p="947">energy</span> <span
+                                    data-p="948">that’s</span> <span data-p="949">getting</span> <span data-p="950">produced</span>
+                            <span data-p="951">for</span> <span data-p="952">when</span> <span data-p="953">there</span>
+                            <span data-p="954">is</span> <span data-p="955">no</span> <span data-p="956">Sun</span>
+                            <span data-p="957">and</span> <span data-p="958">there</span> <span data-p="959">are</span>
+                            <span data-p="960">no</span> <span data-p="961">winds</span>. </p>
+                        <p><span data-p="962">Battery</span> <span data-p="963">technology</span>, <span data-p="964">unfortunately</span>,
+                            <span data-p="965">has</span> <span data-p="966">not</span> <span
+                                    data-p="967">progressed</span> <span data-p="968">quite</span> <span
+                                    data-p="969">as</span> <span data-p="970">fast</span> <span data-p="971">as</span>
+                            <span data-p="972">it</span> <span data-p="973">needs</span> <span data-p="974">to</span>
+                            <span data-p="975">match</span> <span data-p="976">with</span> <span data-p="977">the</span>
+                            <span data-p="978">demands</span> <span data-p="979">of</span> <span
+                                    data-p="980">human</span> <span data-p="981">life</span>. <span
+                                    data-p="982">These</span> <span data-p="983">are</span> <span
+                                    data-p="984">technical</span> <span data-p="985">reasons</span> <span data-p="986">why</span>
+                            <span data-p="987">renewables</span> <span data-p="988">haven’t</span> <span data-p="989">quite</span>
+                            <span data-p="990">been</span> <span data-p="991">able</span> <span data-p="992">to</span>
+                            <span data-p="993">compete</span> <span data-p="994">with</span> <span data-p="995">traditional</span>
+                            <span data-p="996">gas</span> <span data-p="997">and</span> <span data-p="998">oil</span>.
+                        </p></div>
+                    <div id="pageText2" style="opacity: 1; top: 0px; display: block;"><span data-p="999">So</span> <span
+                            data-p="1000">what</span> <span data-p="934">where</span> <span data-p="935">the</span>
+                        <span data-p="936">wind</span> <span data-p="937">is</span>, <span data-p="938">and</span> <span
+                                data-p="939">we</span> <span data-p="940">need</span> <span data-p="941">a</span> <span
+                                data-p="942">way</span> <span data-p="943">to</span> <span data-p="944">store</span>
+                        <span data-p="945">all</span> <span data-p="946">the</span> <span data-p="947">energy</span>
+                        <span data-p="948">that’s</span> <span data-p="949">getting</span> <span
+                                data-p="950">produced</span> <span data-p="951">for</span> <span
+                                data-p="952">when</span> <span data-p="953">there</span> <span data-p="954">is</span>
+                        <span data-p="955">no</span> <span data-p="956">Sun</span> <span data-p="957">and</span> <span
+                                data-p="958">there</span> <span data-p="959">are</span> <span data-p="960">no</span>
+                        <span data-p="961">winds</span>. <p></p>
+                        <p><span data-p="962">Battery</span> <span data-p="963">technology</span>, <span data-p="964">unfortunately</span>,
+                            <span data-p="965">has</span> <span data-p="966">not</span> <span
+                                    data-p="967">progressed</span> <span data-p="968">quite</span> <span
+                                    data-p="969">as</span> <span data-p="970">fast</span> <span data-p="971">as</span>
+                            <span data-p="972">it</span> <span data-p="973">needs</span> <span data-p="974">to</span>
+                            <span data-p="975">match</span> <span data-p="976">with</span> <span data-p="977">the</span>
+                            <span data-p="978">demands</span> <span data-p="979">of</span> <span
+                                    data-p="980">human</span> <span data-p="981">life</span>. <span
+                                    data-p="982">These</span> <span data-p="983">are</span> <span
+                                    data-p="984">technical</span> <span data-p="985">reasons</span> <span data-p="986">why</span>
+                            <span data-p="987">renewables</span> <span data-p="988">haven’t</span> <span data-p="989">quite</span>
+                            <span data-p="990">been</span> <span data-p="991">able</span> <span data-p="992">to</span>
+                            <span data-p="993">compete</span> <span data-p="994">with</span> <span data-p="995">traditional</span>
+                            <span data-p="996">gas</span> <span data-p="997">and</span> <span data-p="998">oil</span>.
+                            <span data-p="999">So</span> <span data-p="1000">what</span> <span data-p="1001">then</span>?
+                            <span data-p="1002">Are</span> <span data-p="1003">we</span> <span
+                                    data-p="1004">forced</span> <span data-p="1005">to</span> <span
+                                    data-p="1006">follow</span> <span data-p="1007">the</span> <span
+                                    data-p="1008">whims</span> <span data-p="1009">of</span> <span
+                                    data-p="1010">Russia</span> <span data-p="1011">because</span> <span data-p="1012">renewables</span>
+                            <span data-p="1013">can’t</span> <span data-p="1014">satisfy</span> <span
+                                    data-p="1015">our</span> <span data-p="1016">needs</span> <span
+                                    data-p="1017">yet</span>? <span data-p="1018">Well</span>, <span
+                                    data-p="1019">not</span> <span data-p="1020">necessarily</span>. <span
+                                    data-p="1021">When</span> <span data-p="1022">uranium</span> <span
+                                    data-p="1023">is</span> <span data-p="1024">broken</span> <span
+                                    data-p="1025">down</span> <span data-p="1026">into</span> <span data-p="1027">smaller</span>
+                            <span data-p="1028">atoms</span> <span data-p="1029">it</span> <span
+                                    data-p="1030">releases</span> <span data-p="1031">a</span> <span data-p="1032">tremendous</span>
+                            <span data-p="1033">amount</span> <span data-p="1034">of</span> <span
+                                    data-p="1035">energy</span> <span data-p="1036">that</span> <span
+                                    data-p="1037">can</span> <span data-p="1038">be</span> <span
+                                    data-p="1039">used</span> <span data-p="1040">to</span> <span
+                                    data-p="1041">generate</span> <span data-p="1042">power</span> <span data-p="1043">through</span>
+                            <span data-p="1044">the</span> <span data-p="1045">process</span> <span
+                                    data-p="1046">of</span> <span data-p="1047">nuclear</span> <span data-p="1048">fission</span>.
+                            <span data-p="1049">Essentially</span>, <span data-p="1050">the</span> <span data-p="1051">same</span>
+                            <span data-p="1052">process</span> <span data-p="1053">used</span> <span
+                                    data-p="1054">to</span> <span data-p="1055">create</span> <span data-p="1056">nuclear</span>
+                            <span data-p="1057">bombs</span> <span data-p="1058">could</span> <span
+                                    data-p="1059">be</span> <span data-p="1060">used</span> <span
+                                    data-p="1061">to</span> <span data-p="1062">generate</span> <span data-p="1063">energy</span>
+                            <span data-p="1064">enough</span> <span data-p="1065">to</span> <span
+                                    data-p="1066">power</span> <span data-p="1067">the</span> <span
+                                    data-p="1068">world</span>. </p>
+                        <p><span data-p="1069">Before</span> <span data-p="1070">we</span> <span data-p="1071">go</span>
+                            <span data-p="1072">on</span>, <span data-p="1073">I</span> <span data-p="1074">feel</span>
+                            <span data-p="1075">I</span> <span data-p="1076">need</span> <span data-p="1077">to</span>
+                            <span data-p="1078">make</span> <span data-p="1079">one</span> <span
+                                    data-p="1080">thing</span> <span data-p="1081">clear</span>. <span data-p="1082">Ultimately</span>,
+                            <span data-p="1083">the</span> <span data-p="1084">best</span> <span
+                                    data-p="1085">form</span> <span data-p="1086">of</span> <span
+                                    data-p="1087">energy</span> <span data-p="1088">is</span> <span
+                                    data-p="1089">clean</span>, <span data-p="1090">renewable</span> <span
+                                    data-p="1091">energy</span>. <span data-p="1092">All</span> <span
+                                    data-p="1093">I</span> <span data-p="1094">want</span> <span data-p="1095">us</span>
+                            <span data-p="1096">to</span> <span data-p="1097">discuss</span> <span
+                                    data-p="1098">is</span> <span data-p="1099">while</span> <span
+                                    data-p="1100">we</span> <span data-p="1101">wait</span> <span
+                                    data-p="1102">for</span> <span data-p="1103">the</span> <span data-p="1104">technology</span>
+                            <span data-p="1105">to</span> <span data-p="1106">meet</span> <span data-p="1107">up</span>
+                            <span data-p="1108">with</span> <span data-p="1109">our</span> <span
+                                    data-p="1110">demands</span>, <span data-p="1111">is</span> <span
+                                    data-p="1112">it</span> <span data-p="1113">possible</span> <span
+                                    data-p="1114">for</span> <span data-p="1115">nuclear</span> <span data-p="1116">fission</span>
+                            <span data-p="1117">to</span> <span data-p="1118">act</span> <span data-p="1119">as</span>
+                            <span data-p="1120">a</span> <span data-p="1121">stop</span>-<span data-p="1122">gap</span>?
+                            <span data-p="1123">The</span> <span data-p="1124">technology</span> <span
+                                    data-p="1125">has</span> <span data-p="1126">been</span> <span
+                                    data-p="1127">around</span> <span data-p="1128">for</span> <span data-p="1129">nearly</span>
+                            <span data-p="1130">eight</span> <span data-p="1131">decades</span> <span
+                                    data-p="1132">and</span> <span data-p="1133">the</span> <span
+                                    data-p="1134">process</span> <span data-p="1135">of</span> <span data-p="1136">nuclear</span>
+                            <span data-p="1137">fission</span> <span data-p="1138">is</span> <span data-p="1139">emission</span>-<span
+                                    data-p="1140">free</span>. <span data-p="1141">It</span> <span
+                                    data-p="1142">is</span> <span data-p="1143">also</span> <span data-p="1144">a</span>
+                            <span data-p="1145">very</span> <span data-p="1146">efficient</span> <span data-p="1147">process</span>.
+                            <span data-p="1148">So</span> <span data-p="1149">much</span> <span data-p="1150">so</span>
+                            <span data-p="1151">that</span> <span data-p="1152">many</span> <span
+                                    data-p="1153">of</span> <span data-p="1154">the</span> <span data-p="1155">submarines</span>
+                            <span data-p="1156">in</span> <span data-p="1157">the</span> <span
+                                    data-p="1158">United</span> <span data-p="1159">States</span> <span data-p="1160">Navy</span>
+                            <span data-p="1161">are</span> <span data-p="1162">powered</span> <span
+                                    data-p="1163">by</span> <span data-p="1164">it</span>, <span
+                                    data-p="1165">and</span> <span data-p="1166">only</span> <span
+                                    data-p="1167">need</span> <span data-p="1168">to</span> <span
+                                    data-p="1169">be</span> <span data-p="1170">refueled</span> <span
+                                    data-p="1171">once</span> <span data-p="1172">every</span> 20 <span data-p="1173">years</span>
+                            <span data-p="1174">or</span> <span data-p="1175">so</span>. </p>
+                        <p><span data-p="1176">The</span> <span data-p="1177">obvious</span> <span data-p="1178">association</span>
+                            <span data-p="1179">with</span> <span data-p="1180">weaponization</span> <span
+                                    data-p="1181">of</span> <span data-p="1182">this</span> <span data-p="1183">technology</span>
+                            <span data-p="1184">is</span> <span data-p="1185">understandable</span>, <span
+                                    data-p="1186">as</span> <span data-p="1187">I’ve</span> <span
+                                    data-p="1188">just</span> <span data-p="1189">mentioned</span>, <span data-p="1190">but</span>
+                            <span data-p="1191">while</span> <span data-p="1192">the</span> <span
+                                    data-p="1193">threat</span> <span data-p="1194">of</span> <span data-p="1195">nuclear</span>
+                            <span data-p="1196">weapons</span> <span data-p="1197">is</span> <span
+                                    data-p="1198">ever</span>-<span data-p="1199">present</span>, <span
+                                    data-p="1200">so</span> <span data-p="1201">is</span> <span data-p="1202">the</span>
+                            <span data-p="1203">weakness</span> <span data-p="1204">of</span> <span
+                                    data-p="1205">a</span> <span data-p="1206">collective</span> <span data-p="1207">reliance</span>
+                            <span data-p="1208">on</span> <span data-p="1209">any</span> <span data-p="1210">one</span>
+                            <span data-p="1211">country’s</span> <span data-p="1212">supply</span> <span data-p="1213">of</span>
+                            <span data-p="1214">fuel</span>. <span data-p="1215">It’s</span> <span
+                                    data-p="1216">a</span> <span data-p="1217">tremendous</span> <span data-p="1218">vulnerability</span>.
+                            <span data-p="1219">Whenever</span> <span data-p="1220">winter</span> <span data-p="1221">comes</span>,
+                            <span data-p="1222">Germany</span> <span data-p="1223">requires</span> <span data-p="1224">gas</span>
+                            <span data-p="1225">to</span> <span data-p="1226">heat</span> <span
+                                    data-p="1227">around</span> <span data-p="1228">half</span> <span
+                                    data-p="1229">of</span> <span data-p="1230">its</span> <span
+                                    data-p="1231">homes</span>, <span data-p="1232">gas</span> <span
+                                    data-p="1233">which</span> <span data-p="1234">it</span> <span
+                                    data-p="1235">does</span> <span data-p="1236">not</span> <span
+                                    data-p="1237">have</span> [<span data-p="1238">MA</span>10]. <span
+                                    data-p="1239">The</span> <span data-p="1240">strong</span> <span data-p="1241">stance</span>
+                            <span data-p="1242">it</span> <span data-p="1243">took</span> <span data-p="1244">at</span>
+                            <span data-p="1245">the</span> <span data-p="1246">start</span> <span
+                                    data-p="1247">of</span> <span data-p="1248">the</span> <span
+                                    data-p="1249">Ukraine</span> <span data-p="1250">war</span> <span
+                                    data-p="1251">is</span> <span data-p="1252">now</span> <span data-p="1253">in</span>
+                            <span data-p="1254">doubt</span> <span data-p="1255">against</span> <span
+                                    data-p="1256">a</span> <span data-p="1257">burgeoning</span> <span data-p="1258">demand</span>
+                            <span data-p="1259">for</span> <span data-p="1260">power</span>. <span
+                                    data-p="1261">This</span> <span data-p="1262">may</span> <span data-p="1263">eventually</span>
+                            <span data-p="1264">amount</span> <span data-p="1265">to</span> <span
+                                    data-p="1266">lifting</span> <span data-p="1267">or</span> <span data-p="1268">easing</span>
+                            <span data-p="1269">certain</span> <span data-p="1270">sanctions</span> <span data-p="1271">against</span>
+                            <span data-p="1272">Russia</span>, <span data-p="1273">as</span> <span
+                                    data-p="1274">has</span> <span data-p="1275">already</span> <span data-p="1276">happened</span>
+                            <span data-p="1277">to</span> <span data-p="1278">a</span> <span
+                                    data-p="1279">smaller</span> <span data-p="1280">degree</span>. </p>
+                        <p><span data-p="1281">The</span> <span data-p="1282">effect</span> <span
+                                data-p="1283">of</span> <span data-p="1284">the</span> <span data-p="1285">war</span>
+                            <span data-p="1286">is</span> <span data-p="1287">being</span> <span
+                                    data-p="1288">felt</span> <span data-p="1289">even</span> <span
+                                    data-p="1290">in</span> <span data-p="1291">relatively</span> <span data-p="1292">apolitical</span>
+                            <span data-p="1293">developing</span> <span data-p="1294">nations</span> <span
+                                    data-p="1295">like</span> <span data-p="1296">Bangladesh</span>, <span
+                                    data-p="1297">where</span> <span data-p="1298">oil</span> <span
+                                    data-p="1299">prices</span> <span data-p="1300">were</span> <span data-p="1301">recently</span>
+                            <span data-p="1302">raised</span> <span data-p="1303">by</span> <span
+                                    data-p="1304">as</span> <span data-p="1305">much</span> <span
+                                    data-p="1306">as</span> 51%[<span data-p="1307">MA</span>11]. <span data-p="1308">Bangladesh</span>
+                            <span data-p="1309">is</span> <span data-p="1310">now</span> <span
+                                    data-p="1311">launching</span> <span data-p="1312">a</span> <span
+                                    data-p="1313">bid</span> <span data-p="1314">to</span> <span
+                                    data-p="1315">purchase</span> <span data-p="1316">Russian</span> <span
+                                    data-p="1317">oil</span>. <span data-p="1318">More</span> <span
+                                    data-p="1319">and</span> <span data-p="1320">more</span> <span data-p="1321">countries</span>
+                            <span data-p="1322">will</span> <span data-p="1323">bend</span> <span
+                                    data-p="1324">to</span> <span data-p="1325">the</span> <span
+                                    data-p="1326">need</span> <span data-p="1327">for</span> <span
+                                    data-p="1328">oil</span> <span data-p="1329">and</span> <span
+                                    data-p="1330">our</span> <span data-p="1331">united</span> <span data-p="1332">opposition</span>
+                            <span data-p="1333">to</span> <span data-p="1334">Russia’s</span> <span data-p="1335">aggression</span>
+                            <span data-p="1336">may</span> <span data-p="1337">slowly</span> <span
+                                    data-p="1338">face</span> <span data-p="1339">a</span> <span data-p="1340">materialistic</span>
+                            <span data-p="1341">end</span>. <span data-p="1342">The</span> <span
+                                    data-p="1343">biggest</span> <span data-p="1344">fear</span> <span
+                                    data-p="1345">for</span> <span data-p="1346">many</span> <span
+                                    data-p="1347">with</span> <span data-p="1348">nuclear</span> <span data-p="1349">energy</span>
+                            <span data-p="1350">is</span> <span data-p="1351">the</span> <span
+                                    data-p="1352">threat</span> <span data-p="1353">of</span> <span data-p="1354">nuclear</span>
+                            <span data-p="1355">war</span>. <span data-p="1356">The</span> <span
+                                    data-p="1357">reality</span>, <span data-p="1358">as</span> <span
+                                    data-p="1359">I’ve</span> <span data-p="1360">said</span> <span data-p="1361">expressly</span>,
+                            <span data-p="1362">is</span> <span data-p="1363">that</span> <span
+                                    data-p="1364">uranium</span> <span data-p="1365">has</span> <span
+                                    data-p="1366">the</span> <span data-p="1367">ability</span> <span
+                                    data-p="1368">to</span> <span data-p="1369">kill</span> <span
+                                    data-p="1370">billions</span>. <span data-p="1371">But</span> <span data-p="1372">perhaps</span>
+                            <span data-p="1373">there</span> <span data-p="1374">is</span> <span data-p="1375">a</span>
+                            <span data-p="1376">different</span> <span data-p="1377">way</span> <span
+                                    data-p="1378">of</span> <span data-p="1379">thinking</span> <span data-p="1380">about</span>
+                            <span data-p="1381">this</span>? <span data-p="1382">One</span> <span
+                                    data-p="1383">that</span> <span data-p="1384">could</span> <span data-p="1385">potentially</span>
+                            <span data-p="1386">save</span> <span data-p="1387">millions</span> <span
+                                    data-p="1388">of</span> <span data-p="1389">lives</span>.</p>
+                        <p><span data-p="1390">Every</span> <span data-p="1391">bit</span> <span data-p="1392">of</span>
+                            <span data-p="1393">uranium</span> <span data-p="1394">that</span> <span
+                                    data-p="1395">we</span> <span data-p="1396">use</span> <span data-p="1397">to</span>
+                            <span data-p="1398">create</span> <span data-p="1399">clean</span> <span data-p="1400">energy</span>
+                            <span data-p="1401">is</span> <span data-p="1402">uranium</span> <span
+                                    data-p="1403">that</span> <span data-p="1404">cannot</span> <span
+                                    data-p="1405">be</span> <span data-p="1406">used</span> <span
+                                    data-p="1407">to</span> <span data-p="1408">create</span> <span data-p="1409">nuclear</span>
+                            <span data-p="1410">warheads</span>. <span data-p="1411">In</span> <span
+                                    data-p="1412">fact</span>, <span data-p="1413">around</span> 10% <span
+                                    data-p="1414">of</span> <span data-p="1415">the</span> <span
+                                    data-p="1416">uranium</span> <span data-p="1417">used</span> <span
+                                    data-p="1418">in</span> <span data-p="1419">the</span> <span data-p="1420">operational</span>
+                            <span data-p="1421">nuclear</span> <span data-p="1422">reactors</span> <span data-p="1423">in</span>
+                            <span data-p="1424">America</span> <span data-p="1425">were</span> <span
+                                    data-p="1426">taken</span> <span data-p="1427">from</span> <span data-p="1428">decommissioned</span>
+                            <span data-p="1429">warheads</span> [<span data-p="1430">MA</span>12]. <span data-p="1431">The</span>
+                            <span data-p="1432">world</span> <span data-p="1433">currently</span> <span data-p="1434">has</span>
+                            <span data-p="1435">uranium</span> <span data-p="1436">stores</span> <span data-p="1437">that</span>
+                            <span data-p="1438">can</span> <span data-p="1439">last</span> <span data-p="1440">us</span>
+                            <span data-p="1441">for</span> <span data-p="1442">a</span> <span data-p="1443">few</span>
+                            <span data-p="1444">hundred</span> <span data-p="1445">years</span>. <span
+                                    data-p="1446">And</span> <span data-p="1447">while</span> <span
+                                    data-p="1448">it</span> <span data-p="1449">is</span> <span
+                                    data-p="1450">certainly</span> <span data-p="1451">not</span> <span
+                                    data-p="1452">a</span> <span data-p="1453">renewable</span> <span data-p="1454">energy</span>
+                            <span data-p="1455">source</span>, <span data-p="1456">it</span> <span
+                                    data-p="1457">can</span> <span data-p="1458">buy</span> <span
+                                    data-p="1459">us</span> <span data-p="1460">two</span> <span
+                                    data-p="1461">very</span> <span data-p="1462">important</span> <span data-p="1463">things</span>:
+                            <span data-p="1464">Time</span> <span data-p="1465">to</span> <span data-p="1466">get</span>
+                            <span data-p="1467">our</span> <span data-p="1468">technology</span> <span data-p="1469">good</span>
+                            <span data-p="1470">enough</span> <span data-p="1471">to</span> <span
+                                    data-p="1472">harness</span> <span data-p="1473">the</span> <span data-p="1474">power</span>
+                            <span data-p="1475">of</span> <span data-p="1476">renewables</span>, <span
+                                    data-p="1477">and</span> <span data-p="1478">alleviation</span> <span data-p="1479">of</span>
+                            <span data-p="1480">military</span> <span data-p="1481">leverage</span> <span data-p="1482">by</span>
+                            <span data-p="1483">countries</span> <span data-p="1484">like</span> <span data-p="1485">Russia</span>.
+                        </p>
+                        <p><span data-p="1486">But</span> <span data-p="1487">this</span> <span data-p="1488">is</span>
+                            <span data-p="1489">the</span> <span data-p="1490">reality</span> <span
+                                    data-p="1491">with</span> <span data-p="1492">all</span> <span
+                                    data-p="1493">forms</span> <span data-p="1494">of</span> <span
+                                    data-p="1495">energy</span> <span data-p="1496">production</span>, <span
+                                    data-p="1497">even</span> <span data-p="1498">renewable</span> <span data-p="1499">energy</span>.
+                            <span data-p="1500">They</span> <span data-p="1501">all</span> <span
+                                    data-p="1502">come</span> <span data-p="1503">with</span> <span
+                                    data-p="1504">risks</span> <span data-p="1505">and</span> <span
+                                    data-p="1506">issues</span> <span data-p="1507">that</span> <span
+                                    data-p="1508">need</span> <span data-p="1509">addressing</span>. <span
+                                    data-p="1510">Solar</span> <span data-p="1511">farms</span> <span
+                                    data-p="1512">take</span> <span data-p="1513">up</span> <span
+                                    data-p="1514">huge</span> <span data-p="1515">amounts</span> <span
+                                    data-p="1516">of</span> <span data-p="1517">space</span>. <span
+                                    data-p="1518">Wind</span> <span data-p="1519">farms</span> <span
+                                    data-p="1520">and</span> <span data-p="1521">turbines</span> <span
+                                    data-p="1522">are</span> <span data-p="1523">oft</span>-<span
+                                    data-p="1524">maligned</span> <span data-p="1525">for</span> <span data-p="1526">their</span>
+                            <span data-p="1527">noise</span> <span data-p="1528">levels</span> <span
+                                    data-p="1529">and</span> <span data-p="1530">potential</span> <span data-p="1531">dangers</span>
+                            <span data-p="1532">to</span> <span data-p="1533">wildlife</span>. <span
+                                    data-p="1534">These</span> <span data-p="1535">issues</span> <span data-p="1536">will</span>
+                            <span data-p="1537">need</span> <span data-p="1538">to</span> <span data-p="1539">be</span>
+                            <span data-p="1540">addressed</span> <span data-p="1541">before</span> <span data-p="1542">the</span>
+                            <span data-p="1543">world</span> <span data-p="1544">embraces</span> <span data-p="1545">nuclear</span>
+                            <span data-p="1546">power</span> <span data-p="1547">as</span> <span data-p="1548">a</span>
+                            <span data-p="1549">collective</span> <span data-p="1550">energy</span> <span data-p="1551">source</span>.
+                            <span data-p="1552">But</span> <span data-p="1553">if</span> <span data-p="1554">we</span>
+                            <span data-p="1555">didn’t</span> <span data-p="1556">take</span> <span
+                                    data-p="1557">to</span> <span data-p="1558">the</span> <span
+                                    data-p="1559">skies</span> <span data-p="1560">because</span> <span
+                                    data-p="1561">we</span> <span data-p="1562">were</span> <span
+                                    data-p="1563">afraid</span> <span data-p="1564">we’d</span> <span data-p="1565">crash</span>,
+                            <span data-p="1566">we</span> <span data-p="1567">would</span> <span
+                                    data-p="1568">never</span> <span data-p="1569">have</span> <span
+                                    data-p="1570">made</span> <span data-p="1571">the</span> <span data-p="1572">airplane</span>.
+                            <span data-p="1573">Yet</span> <span data-p="1574">we</span> <span data-p="1575">did</span>,
+                            <span data-p="1576">and</span> <span data-p="1577">today</span> <span
+                                    data-p="1578">air</span> <span data-p="1579">travel</span> <span
+                                    data-p="1580">is</span> <span data-p="1581">now</span> <span
+                                    data-p="1582">the</span> <span data-p="1583">safest</span> <span
+                                    data-p="1584">mode</span> <span data-p="1585">of</span> <span data-p="1586">transportation</span>
+                            <span data-p="1587">humanity</span> <span data-p="1588">has</span> <span
+                                    data-p="1589">ever</span> <span data-p="1590">seen</span>. </p>
+                        <p><span data-p="1591">The</span> <span data-p="1592">fear</span> <span data-p="1593">of</span>
+                            <span data-p="1594">consequence</span>, <span data-p="1595">the</span> <span data-p="1596">same</span>
+                            <span data-p="1597">fear</span> <span data-p="1598">that</span> <span
+                                    data-p="1599">has</span> <span data-p="1600">made</span> <span data-p="1601">airplanes</span>
+                            <span data-p="1602">the</span> <span data-p="1603">safest</span> <span
+                                    data-p="1604">mode</span> <span data-p="1605">of</span> <span data-p="1606">transport</span>,
+                            <span data-p="1607">has</span> <span data-p="1608">meant</span> <span
+                                    data-p="1609">that</span> <span data-p="1610">nuclear</span> <span data-p="1611">power</span>
+                            <span data-p="1612">is</span> <span data-p="1613">much</span> <span
+                                    data-p="1614">safer</span> <span data-p="1615">than</span> <span
+                                    data-p="1616">we</span> <span data-p="1617">can</span> <span
+                                    data-p="1618">imagine</span>. <span data-p="1619">In</span> <span
+                                    data-p="1620">what</span> <span data-p="1621">is</span> <span
+                                    data-p="1622">now</span> <span data-p="1623">a</span> <span
+                                    data-p="1624">rather</span> <span data-p="1625">famous</span> <span data-p="1626">statistic</span>,
+                            <span data-p="1627">today</span>, <span data-p="1628">fewer</span> <span data-p="1629">people</span>
+                            <span data-p="1630">die</span> <span data-p="1631">from</span> <span
+                                    data-p="1632">nuclear</span> <span data-p="1633">power</span> <span data-p="1634">than</span>
+                            <span data-p="1635">they</span> <span data-p="1636">do</span> <span
+                                    data-p="1637">from</span> <span data-p="1638">solar</span> <span
+                                    data-p="1639">power</span> <span data-p="1640">per</span> <span
+                                    data-p="1641">amount</span> <span data-p="1642">of</span> <span
+                                    data-p="1643">energy</span> <span data-p="1644">produced</span>. <span
+                                    data-p="1645">To</span> <span data-p="1646">make</span> <span
+                                    data-p="1647">matters</span> <span data-p="1648">worse</span>, <span data-p="1649">about</span>
+                            <span data-p="1650">seven</span> <span data-p="1651">million</span> <span data-p="1652">people</span>
+                            <span data-p="1653">die</span> <span data-p="1654">from</span> <span
+                                    data-p="1655">air</span> <span data-p="1656">pollution</span> <span data-p="1657">every</span>
+                            <span data-p="1658">year</span>. <span data-p="1659">When</span> <span
+                                    data-p="1660">you</span> <span data-p="1661">factor</span> <span
+                                    data-p="1662">in</span> <span data-p="1663">that</span> <span
+                                    data-p="1664">solar</span> <span data-p="1665">farms</span> <span data-p="1666">release</span>
+                            <span data-p="1667">four</span> <span data-p="1668">times</span> <span
+                                    data-p="1669">more</span> <span data-p="1670">carbon</span> <span data-p="1671">emissions</span>
+                            <span data-p="1672">than</span> <span data-p="1673">nuclear</span> <span data-p="1674">plants</span>,
+                            <span data-p="1675">it</span> <span data-p="1676">really</span> <span
+                                    data-p="1677">puts</span> <span data-p="1678">into</span> <span data-p="1679">context</span>
+                            <span data-p="1680">the</span> <span data-p="1681">lack</span> <span data-p="1682">of</span>
+                            <span data-p="1683">perspective</span> <span data-p="1684">surrounding</span> <span
+                                    data-p="1685">this</span> <span data-p="1686">rather</span> <span
+                                    data-p="1687">old</span> <span data-p="1688">technology</span>. </p>
+                        <p><span data-p="1689">Put</span> <span data-p="1690">together</span>, <span
+                                data-p="1691">this</span> <span data-p="1692">explains</span> <span
+                                data-p="1693">an</span> <span data-p="1694">estimate</span> <span
+                                data-p="1695">from</span> <span data-p="1696">one</span> <span data-p="1697">of</span>
+                            <span data-p="1698">the</span> <span data-p="1699">leading</span> <span data-p="1700">climate</span>
+                            <span data-p="1701">scientists</span> <span data-p="1702">in</span> <span
+                                    data-p="1703">the</span> <span data-p="1704">U</span>.<span data-p="1705">S</span>,
+                            <span data-p="1706">James</span> <span data-p="1707">Hansen</span>, <span
+                                    data-p="1708">that</span> <span data-p="1709">as</span> <span
+                                    data-p="1710">of</span> 2013, <span data-p="1711">nuclear</span> <span
+                                    data-p="1712">power</span> <span data-p="1713">had</span> <span
+                                    data-p="1714">saved</span> 1.8 <span data-p="1715">million</span> <span
+                                    data-p="1716">lives</span> <span data-p="1717">that</span> <span
+                                    data-p="1718">would</span> <span data-p="1719">otherwise</span> <span data-p="1720">have</span>
+                            <span data-p="1721">been</span> <span data-p="1722">lost</span> <span
+                                    data-p="1723">from</span> <span data-p="1724">air</span> <span data-p="1725">pollution</span>
+                            <span data-p="1726">or</span> <span data-p="1727">accidents</span> <span data-p="1728">during</span>
+                            <span data-p="1729">energy</span> <span data-p="1730">production</span>. <span
+                                    data-p="1731">Now</span> <span data-p="1732">again</span>, <span
+                                    data-p="1733">this</span> <span data-p="1734">is</span> <span
+                                    data-p="1735">not</span> <span data-p="1736">to</span> <span
+                                    data-p="1737">dunk</span> <span data-p="1738">on</span> <span
+                                    data-p="1739">solar</span> <span data-p="1740">energy</span> <span
+                                    data-p="1741">by</span> <span data-p="1742">any</span> <span
+                                    data-p="1743">stretch</span> <span data-p="1744">of</span> <span
+                                    data-p="1745">the</span> <span data-p="1746">imagination</span>. <span
+                                    data-p="1747">It’s</span> <span data-p="1748">only</span> <span
+                                    data-p="1749">to</span> <span data-p="1750">give</span> <span data-p="1751">a</span>
+                            <span data-p="1752">clearer</span> <span data-p="1753">picture</span>, <span data-p="1754">that</span>
+                            <span data-p="1755">perhaps</span> <span data-p="1756">while</span> <span
+                                    data-p="1757">we</span> <span data-p="1758">wait</span> <span
+                                    data-p="1759">for</span> <span data-p="1760">renewables</span> <span data-p="1761">to</span>
+                            <span data-p="1762">get</span> <span data-p="1763">good</span> <span
+                                    data-p="1764">enough</span> <span data-p="1765">to</span> <span
+                                    data-p="1766">serve</span> <span data-p="1767">us</span> <span data-p="1768">completely</span>,
+                            <span data-p="1769">there</span> <span data-p="1770">might</span> <span
+                                    data-p="1771">be</span> <span data-p="1772">a</span> <span data-p="1773">stop</span>-<span
+                                    data-p="1774">gap</span>. </p>
+                        <p><span data-p="1775">One</span> <span data-p="1776">that</span> <span data-p="1777">is</span>
+                            <span data-p="1778">not</span> <span data-p="1779">only</span> <span
+                                    data-p="1780">better</span> <span data-p="1781">than</span> <span
+                                    data-p="1782">the</span> <span data-p="1783">alternatives</span> <span
+                                    data-p="1784">we</span> <span data-p="1785">currently</span> <span data-p="1786">have</span>,
+                            <span data-p="1787">but</span> <span data-p="1788">also</span> <span
+                                    data-p="1789">has</span> <span data-p="1790">the</span> <span data-p="1791">potential</span>
+                            <span data-p="1792">to</span> <span data-p="1793">reduce</span> <span
+                                    data-p="1794">the</span> <span data-p="1795">number</span> <span
+                                    data-p="1796">of</span> <span data-p="1797">warheads</span> <span data-p="1798">lurking</span>
+                            <span data-p="1799">in</span> <span data-p="1800">every</span> <span
+                                    data-p="1801">corner</span> <span data-p="1802">of</span> <span
+                                    data-p="1803">the</span> <span data-p="1804">world</span>. <span
+                                    data-p="1805">In</span> <span data-p="1806">the</span> <span
+                                    data-p="1807">end</span>, <span data-p="1808">I</span> <span
+                                    data-p="1809">find</span> <span data-p="1810">it</span> <span
+                                    data-p="1811">so</span> <span data-p="1812">fascinating</span> <span data-p="1813">that</span>
+                            <span data-p="1814">the</span> <span data-p="1815">same</span> <span
+                                    data-p="1816">material</span>, <span data-p="1817">the</span> <span data-p="1818">same</span>
+                            <span data-p="1819">process</span> <span data-p="1820">can</span> <span
+                                    data-p="1821">on</span> <span data-p="1822">the</span> <span
+                                    data-p="1823">one</span> <span data-p="1824">hand</span> <span data-p="1825">completely</span>
+                            <span data-p="1826">annihilate</span> <span data-p="1827">humanity</span>, <span
+                                    data-p="1828">yet</span> <span data-p="1829">on</span> <span
+                                    data-p="1830">the</span> <span data-p="1831">other</span> <span
+                                    data-p="1832">be</span> <span data-p="1833">the</span> <span
+                                    data-p="1834">pillar</span> <span data-p="1835">to</span> <span
+                                    data-p="1836">its</span> <span data-p="1837">sustenance</span>. </p>
+                        <p><span data-p="1838">At</span> <span data-p="1839">least</span> <span data-p="1840">for</span>
+                            <span data-p="1841">the</span> <span data-p="1842">time</span> <span
+                                    data-p="1843">being</span>.</p></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="comments">
+
+        <div class="comment">
+
+            <h3>Имя пользователя</h3>
+            <p>Сообщение......</p>
+
+            <div class="panel_like_dislike">
+                <img class="like" src="image/like_blue.png">
+                <p>0</p>
+                <img class="unlike" src="image/unlike_blue.png">
+                <p>0</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+<div th:replace="fragments/footer"></div>
+
+<script src="script/auth.js" type="text/javascript"></script>
+</body>
+</html>

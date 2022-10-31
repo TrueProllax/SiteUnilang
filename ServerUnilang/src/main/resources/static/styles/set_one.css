@@ -1,0 +1,128 @@
+.title {
+    text-align: center;
+    color: white;
+    margin: 20px 10px;
+    font-size: 30px;
+}
+
+.blocks img {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .4s;
+}
+
+.blocks img:hover {
+    transform: scale(1.05);
+}
+
+.blocks {
+    color: white;
+    padding: 10px 0px;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocks h5 {
+    font-weight: normal;
+}
+
+
+/* for card */
+
+.sets {
+    display: block;
+}
+
+
+.blocks .set {
+    list-style-type: none;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #003566;
+}
+
+.blocks li {
+    float: left;
+}
+
+.blocks li div {
+    display: block;
+    color: #FFD60A;
+    text-align: left;
+    padding: 32px 32px;
+    text-decoration: none;
+}
+
+.blocks li .card {
+    padding: 100px 200px;
+    margin: 20px 20px;
+    background-color: #001D3D;
+    border-radius: 10px;
+}
+
+.button-card {
+    float: right;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    margin-right: 12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 2px inset #FFC300;
+}
+
+
+.button-card:hover {
+    border: 2px inset #DC562E;
+}
+
+.button-left {
+    background-image: url(../image/Left.png);
+}
+
+.button-right {
+    background-image: url(../image/Right.png);
+}
+
+.button-right:active {
+    border: 2px inset #4c6fc7;
+}
+
+.button-left:active {
+    border: 2px inset #4c6fc7;
+}
+
+/* buttons card action */
+
+.btn-card-action {
+    border: none;
+    border-radius: 50%;
+    background-color: #2e3856;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btn-update {
+    background-image: url("../image/action_change.png");
+}
+
+.btn-delete {
+    background-image: url("../image/action_delete.png");
+}
+
+.btn-card-action:hover {
+    background-color: #43496b;
+}
+
+.btn-card-action:active {
+    background-color: #FFD60A;
+}

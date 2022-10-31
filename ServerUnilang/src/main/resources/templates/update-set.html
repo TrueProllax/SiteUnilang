@@ -1,0 +1,98 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unilang</title>
+    <link th:href="@{styles/main.css}" rel="stylesheet"/>
+    <link th:href="@{styles/logo.css}" rel="stylesheet"/>
+    <link th:href="@{styles/buttons.css}" rel="stylesheet"/>
+    <link th:href="@{styles/update-set.css}" rel="stylesheet"/>
+    <link th:href="@{styles/selector.css}" rel="stylesheet"/>
+    <link th:href="@{styles/input.css}" rel="stylesheet"/>
+
+
+    <link rel="icon" type="image/x-icon" th:href="@{https://i.ibb.co/60hYFfb/u.png}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div>
+    <div class="brand">
+        <div th:replace="fragments/logo"></div>
+    </div>
+</div>
+<div th:replace="fragments/header :: header"></div>
+
+<div class="content">
+
+    <div class="title">
+        Набор карточек
+    </div>
+
+    <div class="blocks add-div">
+
+
+        <div class="set-block">
+            <h4>1</h4>
+            <div class="title-inputs">
+                <p type="text">Слово</p>
+                <p type="text">Перевод</p>
+            </div>
+            <div class="inputs">
+                <input type="text" placeholder="слово">
+                <input type="text" placeholder="перевод">
+            </div>
+            <div class="group-buttons-action">
+                <button class="btn-card-action btn-delete"></button>
+            </div>
+        </div>
+        <div class="set-block">
+            <h4>2</h4>
+            <div class="title-inputs">
+                <p type="text">Слово</p>
+                <p type="text">Перевод</p>
+            </div>
+            <div class="inputs">
+                <input type="text" placeholder="слово">
+                <input type="text" placeholder="перевод">
+            </div>
+            <div class="group-buttons-action">
+                <button class="btn-card-action btn-delete"></button>
+            </div>
+        </div>
+        <div class="set-block">
+            <h4>3</h4>
+            <div class="title-inputs">
+                <p type="text">Слово</p>
+                <p type="text">Перевод</p>
+            </div>
+            <div class="inputs">
+                <input type="text" placeholder="слово">
+                <input type="text" placeholder="перевод">
+            </div>
+            <div class="group-buttons-action">
+                <button class="btn-card-action btn-delete"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="blocks">
+
+
+        <div class="under-panel-set">
+            <button class="btn-card-action btn-addition-set" onclick="add_set ()"></button>
+            <button class="btn-card-action btn-delete-set"></button>
+        </div>
+
+
+        <button class="btn">СОХРАНИТЬ</button>
+    </div>
+
+
+</div>
+
+<div th:replace="fragments/footer"></div>
+
+<script src="script/set.js"></script>
+<script src="script/auth.js" type="text/javascript"></script>
+</body>
+</html>

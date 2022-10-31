@@ -1,0 +1,140 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Unilang</title>
+        
+        <link th:href="@{styles/main.css}" rel="stylesheet"/>
+        <link th:href="@{styles/logo.css}" rel="stylesheet"/>
+        <link th:href="@{styles/buttons.css}" rel="stylesheet"/>
+        <link th:href="@{styles/selector.css}" rel="stylesheet"/>
+        <link th:href="@{styles/input.css}" rel="stylesheet"/>
+        <link th:href="@{styles/favorite_sets.css}" rel="stylesheet"/>
+
+        <link rel="icon" type="image/x-icon" th:href="@{https://i.ibb.co/60hYFfb/u.png}"/>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+            
+    </head>
+    <body>
+        <div>
+            <div class="brand">
+                <div th:replace="fragments/logo"></div>
+            </div>
+        </div>
+        
+        <div th:replace="fragments/header :: header"></div>
+
+        <div class="content">
+
+
+            <div class="hello">
+                <div class="title">
+                    <h2>Наборы избранных учебных карточек</h2>
+                </div>
+            </div>
+
+            <ul class="bar-filter">
+                <li>
+                    <div class="selected-item">
+                        <p>Выбор категории категорию: <span></span></p>
+                    </div>
+
+                    <select class="select" id="select">
+                        <option value="Select">Выбрать</option>
+                        <option value="India">Космос</option>
+                        <option value="Nepal">Художественное</option>
+                        <option value="Bangladesh">Биология</option>
+                        <option value="Sri Lanka">Экология</option>
+                    </select>
+                    <button class="btn btn-sort">Показать</button>
+                </li>
+                <li>
+                    <div class="selected-item">
+                        <p>Поиск по названию: <span></span></p>
+                    </div>
+
+                    <input class="input" type="text" placeholder="Search...">
+                    <button class="btn btn-sort">Показать</button>
+                </li>
+
+            </ul>
+
+
+
+            <div class="blocks">
+
+                <div class="block">
+
+                    <div class="header-block">
+                        <h3>The Element That Could Kill Billions but Save Millions</h3>
+                        <h5>Количество карточек</h5>
+                    </div>
+                    <div class="img_acticle">
+                        <img src="image/art1.webp">
+                    </div>
+                    
+                    <div class="block-action-bar">
+                        <button class="btn" id="change-favorite">Удалить из избранного</button>
+                        <button class="btn"> Подобнее </button>
+                    </div>
+                    
+                </div>
+
+                <div class="block">
+
+                    <div class="header-block">
+                        <h3>The Element That Could Kill Billions but Save Millions</h3>
+                        <h5>Количество карточек</h5>
+                    </div>
+                    <div class="img_acticle">
+                        <img src="image/art1.webp">
+                    </div>
+
+                    <div class="block-action-bar">
+                        <button class="btn" id="change-favorite">Удалить из избранного</button>
+                        <button class="btn"> Подобнее </button>
+                    </div>
+                </div>
+
+
+
+                <div class="block">
+
+
+                    <div class="header-block">
+                        <h3>The Element That Could Kill Billions but Save Millions</h3>
+                        <h5>Количество карточек</h5>
+                    </div>
+                    <div class="img_acticle">
+                        <img src="image/art1.webp">
+                    </div>
+
+                    <div class="block-action-bar">
+                        <button class="btn" id="change-favorite">Удалить из избранного</button>
+                        <button class="btn"> Подобнее </button>
+                    </div>
+                </div>
+
+                <div class="block">
+
+
+                    <div class="header-block">
+                        <h3>The Element That Could Kill Billions but Save Millions</h3>
+                        <h5>Количество карточек</h5>
+                    </div>
+                    <div class="img_acticle">
+                        <img src="image/art1.webp">
+                    </div>
+
+                    <div class="block-action-bar">
+                        <button class="btn" id="change-favorite">Удалить из избранного</button>
+                        <button class="btn"> Подобнее </button>
+                    </div>
+
+            </div>
+
+        </div>
+
+        <div th:replace="fragments/footer"></div>
+        <script th:src="@{js/favorite.js}" type="text/javascript"></script>
+    </body>
+</html>

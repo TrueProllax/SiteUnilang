@@ -1,0 +1,184 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unilang</title>
+    
+    <link th:href="@{styles/buttons.css}" rel="stylesheet"/>
+    <link th:href="@{styles/main.css}" rel="stylesheet"/>
+    <link th:href="@{styles/index.css}" rel="stylesheet"/>
+    <link th:href="@{styles/logo.css}" rel="stylesheet"/>
+    
+    <link rel="icon" type="image/x-icon" th:href="@{https://i.ibb.co/60hYFfb/u.png}"/>
+
+</head>
+
+<body>
+
+<div>
+    <div class="brand">
+        <div th:replace="fragments/logo"></div>
+    </div>
+</div>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="content">
+
+    <div class="hello">
+        <div class="title">
+            <h2>Лента наборов карточек пользователей</h2>
+        </div>
+    </div>
+
+
+    <div class="sets">
+        <ul class="set">
+            <li>
+                <div>
+                    <h3>Имя пользователя</h3>
+                    <h3>Название набора карточек</h3>
+                    <h3>Количество слов</h3>
+                    <h3>Источник слов</h3>
+                </div>
+
+                <div>
+                    <button class="btn">Перейти</button>
+                </div>
+            </li>
+
+            <li style="float: right">
+                <div class="card">
+                    <h3>Изучаемое слово</h3>
+                    <div class="group-buttons">
+                        <!-- <img class="avatar" src="image/Right.png"/> -->
+                        <button class="button-card button-right"></button>
+                        <button class="button-card button-left"></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="set">
+            <li>
+                <div>
+                    <h3>Имя пользователя</h3>
+                    <h3>Название набора карточек</h3>
+                    <h3>Количество слов</h3>
+                    <h3>Источник слов</h3>
+                </div>
+
+                <div>
+                    <button class="btn">Перейти</button>
+                </div>
+            </li>
+
+            <li style="float: right">
+                <div class="card">
+                    <h3>Изучаемое слово</h3>
+                    <div class="group-buttons">
+                        <!-- <img class="avatar" src="image/Right.png"/> -->
+                        <button class="button-card button-right"></button>
+                        <button class="button-card button-left"></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="set">
+            <li>
+                <div>
+                    <h3>Имя пользователя</h3>
+                    <h3>Название набора карточек</h3>
+                    <h3>Количество слов</h3>
+                    <h3>Источник слов</h3>
+                </div>
+
+                <div>
+                    <button class="btn">Перейти</button>
+                </div>
+            </li>
+
+            <li style="float: right">
+                <div class="card">
+                    <h3>Изучаемое слово</h3>
+                    <div class="group-buttons">
+                        <!-- <img class="avatar" src="image/Right.png"/> -->
+                        <button class="button-card button-right"></button>
+                        <button class="button-card button-left"></button>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+
+        <ul class="set">
+            <li>
+                <div>
+                    <h3>Имя пользователя</h3>
+                    <h3>Название набора карточек</h3>
+                    <h3>Количество слов</h3>
+                    <h3>Источник слов</h3>
+                </div>
+
+                <div>
+                    <button class="btn">Перейти</button>
+                </div>
+            </li>
+
+            <li style="float: right">
+                <div class="card">
+                    <h3>Изучаемое слово</h3>
+                    <div class="group-buttons">
+                        <!-- <img class="avatar" src="image/Right.png"/> -->
+                        <button class="button-card button-right"></button>
+                        <button class="button-card button-left"></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="set">
+            <li>
+                <div>
+                    <h3>Имя пользователя</h3>
+                    <h3>Название набора карточек</h3>
+                    <h3>Количество слов</h3>
+                    <h3>Источник слов</h3>
+                </div>
+
+                <div>
+                    <button class="btn">Перейти</button>
+                </div>
+            </li>
+
+            <li style="float: right">
+                <div class="card">
+                    <h3>Изучаемое слово</h3>
+                    <div class="group-buttons">
+                        <!-- <img class="avatar" src="image/Right.png"/> -->
+                        <button class="button-card button-right"></button>
+                        <button class="button-card button-left"></button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="change-sets-line">
+        <ul>
+            <li><p>1</p></li>
+            <li><p>2</p></li>
+            <li><p>3</p></li>
+            <li><p>4</p></li>
+            <li><p>5</p></li>
+            <li><p><</p></li>
+            <li><p>></p></li>
+        </ul>
+    </div>
+
+
+</div>
+
+<div th:replace="fragments/footer"></div>
+
+</body>
+</html>

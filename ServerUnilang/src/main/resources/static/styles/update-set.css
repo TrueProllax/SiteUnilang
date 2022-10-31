@@ -1,0 +1,114 @@
+.title {
+    text-align: center;
+    color: white;
+    margin: 20px 10px;
+    font-size: 30px;
+}
+
+.blocks img {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .4s;
+}
+
+.blocks {
+    color: white;
+    padding: 10px 0px;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocks h5 {
+    font-weight: normal;
+}
+
+/* buttons card action */
+
+.btn-card-action {
+    border: none;
+    border-radius: 50%;
+    background-color: #2e3856;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btn-update {
+    background-image: url("../image/action_change.png");
+}
+
+.btn-delete {
+    background-image: url("../image/action_delete.png");
+}
+
+.btn-card-action:hover {
+    background-color: #43496b;
+}
+
+.btn-card-action:active {
+    background-color: #FFD60A;
+}
+
+/* set block */
+
+
+.set-block {
+    background-color: #3C6488;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.inputs input {
+    margin: 10px 10px;
+    padding: 10px 10px;
+    height: 30px;
+    border: none;
+    outline: none;
+    opacity: 0.4;
+}
+
+.btn {
+    border: 0 !important;
+}
+
+/* under panel set */
+
+.under-panel-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.add-div {
+    margin-bottom: 30px;
+}
+
+.btn-addition-set {
+    width: 50px;
+    height: 50px;
+    background-image: url("../image/addition.png");
+    margin-right: 10px;
+}
+
+.btn-delete-set {
+    width: 50px;
+    height: 50px;
+    background-image: url("../image/action_delete.png");
+}
+

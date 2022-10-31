@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unilang</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link href="style/comp/buttons.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="style/landing.css">
+    <link rel="stylesheet" href="style/logo.css">
+    <link rel="icon" type="image/x-icon" href="http://placeimg.com/90/90/tech">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+<div>
+    <div class="brand">
+        <div th:replace="fragments/logo"></div>
+    </div>
+</div>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="block-content">
+
+    <div class="block-hello">
+        <div class="title">
+            <h2>Легко осваийте языки точка</h2>
+        </div>
+    </div>
+    
+    <div class="content">
+        
+        <h2>110% учеников, использующих Quizlet, говорят, что их успеваемость улучшилась </h2>
+        
+        <div class="element">
+            <div class="text-left">
+                <h3>
+                    Запоминайте что угодно с помощью бесплатных цифровых карточек
+                </h3>
+
+                <h5>
+                    Исследования показывают, что самопроверка с помощью карточек более эффективна, чем перечитывание
+                    конспектов. Найдите готовые карточки, созданные вашими сверстниками и учителями, или мгновенно
+                    создайте собственные.
+                </h5>
+            </div>
+            <img src="image/card.png" alt=""/>
+        </div>
+        
+        <div class="element">
+            
+            <img src="image/card.png" alt=""/>
+            <div class="text-right">
+                <h3>
+                    Запоминайте что угодно с помощью бесплатных цифровых карточек
+                </h3>
+
+                <h5>
+                    Исследования показывают, что самопроверка с помощью карточек более эффективна, чем перечитывание
+                    конспектов. Найдите готовые карточки, созданные вашими сверстниками и учителями, или мгновенно
+                    создайте собственные.
+                </h5>
+            </div>
+            
+        </div>
+
+        <div class="element">
+
+            <div class="text-center">
+                <button class="btn"> Перейти к авторизации </button>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div th:replace="fragments/footer"></div>
+
+</body>
+</html>

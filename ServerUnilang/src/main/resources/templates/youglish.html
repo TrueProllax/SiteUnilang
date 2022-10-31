@@ -1,0 +1,41 @@
+<html  xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unilang</title>
+    <link th:href="@{/styles/main.css}" rel="stylesheet"/>
+    <link th:href="@{/styles/index.css}" rel="stylesheet"/>
+    <link th:href="@{/styles/logo.css}" rel="stylesheet"/>
+    
+    <link rel="icon" type="image/x-icon" href="http://placeimg.com/90/90/tech">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+    <!--<link rel="icon" type="image/x-icon" href="image/icon/u.png">-->
+</head>
+<body>
+<div>
+    <div class="brand">
+        <div th:replace="fragments/logo"></div>
+    </div>
+</div>
+<div th:replace="fragments/header :: header"></div>
+
+<div class="content">
+    <div class="hello">
+        <div class="title">
+            <h2>Лента наборов карточек пользователей</h2>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <a id="yg-widget-0" class="youglish-widget" data-query="great%20power" data-lang="english"
+       data-zones="all,us,uk,aus" data-components="8415" data-bkg-color="#000814" data-link-color="#DC562E"
+       data-ttl-color="#D5BBBB" data-cap-color="#B0D0EC" data-marker-color="#324363"
+       data-panels-bkg-color="#003566" data-text-color="#FFFFFF" rel="nofollow" href="https://youglish.com">Visit
+        YouGlish.com</a>
+</div>
+
+<div th:replace="fragments/footer"></div>
+
+
+<script async src="https://youglish.com/public/emb/widget.js" charset="utf-8"></script>
+</body>
+</html>

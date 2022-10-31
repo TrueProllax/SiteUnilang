@@ -1,0 +1,23 @@
+<div class="header" th:fragment="header">
+    <ul th:fragment="header">
+        <li><a th:href="@{index}">Главная</a></li>
+        <li><a th:href="@{youglish}">YouGlish</a></li>
+        <li><a th:href="@{sets}">Наборы</a></li>
+        <li class="for-down-list"><a href="#">Избранное</a>
+            <ul class="down-list">
+                <li><a th:href="@{favorite_articles}">Статьи</a></li>
+                <li><a th:href="@{favorite_sets}">Наборы</a></li>
+            </ul>
+        </li>
+        <li><a th:href="@{forum}">Форум</a></li>
+        <li><a th:href="@{articles}">Статьи</a></li>
+
+        <li class="header-right"><a th:href="@{auth}">Войти</a></li>
+        <li class="header-right"><a class="profile" th:href="@{profile}"><img class="avatar" src="http://placeimg.com/90/90/animals"/>Гость</a>
+        </li>
+    </ul>
+</div>
+
+
+
+

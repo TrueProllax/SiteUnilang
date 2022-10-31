@@ -1,0 +1,50 @@
+.block-content{
+    color: white;
+    
+}
+
+.block-hello {
+    background-image: url(../image/arts/hello.jpg);
+    background-repeat: no-repeat;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.element {
+    color: white;
+    display: flex;
+    /*background: #003566;*/
+    /*background: linear-gradient(90deg,#001D3D 0%, #003566 40%);*/
+    padding: 10px 10px;
+}
+
+.text-left {
+    padding-right: 10px;
+    text-align: justify;
+}
+
+.text-right {
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.text-center {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+

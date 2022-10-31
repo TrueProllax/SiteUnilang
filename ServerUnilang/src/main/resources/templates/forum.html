@@ -1,0 +1,115 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unilang</title>
+    
+    <link th:href="@{styles/main.css}" rel="stylesheet"/>
+    <link th:href="@{styles/buttons.css}" rel="stylesheet"/>
+    <link th:href="@{styles/logo.css}" rel="stylesheet"/>
+    <link th:href="@{styles/forum.css}" rel="stylesheet"/>
+    
+    <link rel="icon" type="image/x-icon" th:href="@{https://i.ibb.co/60hYFfb/u.png}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<div>
+    <div class="brand">
+        <div th:replace="fragments/logo"></div>
+    </div>
+</div>
+
+<div th:replace="fragments/header :: header"></div>
+
+<div class="content">
+
+    <div class="hello">
+        <div class="title">
+            <h2>Форум</h2>
+        </div>
+    </div>
+
+    <div class="block">
+
+        <div class="element">
+
+            <div class="element-left">
+                <div class="element-topic"><h2>Тема обсуждения</h2></div>
+                <div class="category">
+                    <h4>Проблемы изучения</h4>
+                </div>
+                <div class="tags">
+                    <h6>Tag 1</h6>
+                    <h6>Tag 2</h6>
+                    <h6>Tag 3</h6>
+                    <h6>Tag 4</h6>
+                </div>
+            </div>
+
+            <div class="element-right">
+                <div class="element-description">
+                    <h3>Описание темы</h3>
+                    <p>Много текста. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.</p>
+                </div>
+                <div class="element-action">
+                    <button class="btn">Перейти</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="element">
+
+            <div class="element-left">
+                <div class="element-topic"><h2>Тема обсуждения</h2></div>
+                <div class="category">
+                    <h4>Проблемы изучения</h4>
+                </div>
+                <div class="tags">
+                    <h6>Tag 1</h6>
+                    <h6>Tag 2</h6>
+                    <h6>Tag 3</h6>
+                    <h6>Tag 4</h6>
+                </div>
+            </div>
+
+            <div class="element-right">
+                <div class="element-description">
+                    <h3>Описание темы</h3>
+                    <p>Много текста. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.</p>
+                </div>
+                <div class="element-action">
+                    <button class="btn">Перейти</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="change-sets-line">
+        <ul>
+            <li><p>1</p></li>
+            <li><p>2</p></li>
+            <li><p>3</p></li>
+            <li><p>4</p></li>
+            <li><p>5</p></li>
+            <li><p><</p></li>
+            <li><p>></p></li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+<div th:replace="fragments/footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Unilang</title>
+        
+        <link th:href="@{styles/main.css}" rel="stylesheet"/>
+        <link th:href="@{styles/logo.css}" rel="stylesheet"/>
+        <link th:href="@{styles/buttons.css}" rel="stylesheet"/>
+        <link th:href="@{styles/sets.css}" rel="stylesheet"/>
+        <link th:href="@{styles/selector.css}" rel="stylesheet"/>
+        <link th:href="@{styles/input.css}" rel="stylesheet"/>
+
+        <!--<link href="style/auth.css" rel="stylesheet" type="text/css"/>-->
+
+        <link rel="icon" type="image/x-icon" href="http://placeimg.com/90/90/tech">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+
+
+        <!--<link rel="icon" type="image/x-icon" href="image/icon/u.png">-->
+    </head>
+    <body>
+        <div>
+            <div class="brand">
+                <div th:replace="fragments/logo"></div>
+            </div>
+        </div>
+        
+        <div th:replace="fragments/header :: header"></div>
+
+        <div class="content">
+
+
+            <div class="hello">
+                <div class="title">
+                    <h2>Наборы учебных карточек</h2>
+                </div>
+            </div>
+
+            <ul class="bar-filter">
+                <li>
+                    <div class="selected-item">
+                        <p>Выбор категории категорию: <span></span></p>
+                    </div>
+
+                    <select class="select" id="select">
+                        <option value="Select">Выбрать</option>
+                        <option value="India">Космос</option>
+                        <option value="Nepal">Художественное</option>
+                        <option value="Bangladesh">Биология</option>
+                        <option value="Sri Lanka">Экология</option>
+                    </select>
+                    <button class="btn btn-sort">Показать</button>
+                </li>
+                <li>
+                    <div class="selected-item">
+                        <p>Поиск по названию: <span></span></p>
+                    </div>
+
+                    <input class="input" type="text" placeholder="Search...">
+                    <button class="btn btn-sort">Показать</button>
+                </li>
+
+            </ul>
+
+
+
+            <div class="blocks">
+                <!-- onclick="location.href='set_one.html';"-->
+                <div class="block">
+
+                    <div class="header-block">
+                        <h3>The Element That Could Kill Billions but Save Millions</h3>
+                        <h5>Количество карточек</h5>
+                    </div>
+                    <div class="img_acticle">
+                        <!--<img th:src="@{/images/test.png}"/>-->
+                        <img src="https://i.ibb.co/mDPWcKd/art1.webp">
+                    </div>
+
+                    <div class="block-action-bar">
+                        <button class="btn"> Подобнее </button>
+                    </div>
+                </div>
+
+                <div class="block">
+
+
+                    <div class="header-block">
+                        <h3>The Element That Could Kill Billions but Save Millions</h3>
+                        <h5>Количество карточек</h5>
+                    </div>
+                    <div class="img_acticle">
+                        <img src="https://i.ibb.co/mXPFjNq/art2.webp">
+                    </div>
+
+                    <div class="block-action-bar">
+                        <button class="btn"> Подобнее </button>
+                    </div>
+                </div>
+
+                <div class="block">
+
+
+                    <div class="header-block">
+                        <h3>The Element That Could Kill Billions but Save Millions</h3>
+                        <h5>Количество карточек</h5>
+                    </div>
+                    <div class="img_acticle">
+                        <img src="https://i.ibb.co/mXPFjNq/art2.webp">
+                    </div>
+
+                    <div class="block-action-bar">
+                        <button class="btn"> Подобнее </button>
+                    </div>
+                </div>
+
+                <div class="block">
+
+                    <div class="header-block">
+                        <h3>The Element That Could Kill Billions but Save Millions</h3>
+                        <h5>Количество карточек</h5>
+                    </div>
+                    <div class="img_acticle">
+                        <img src="https://2.downloader.disk.yandex.ru/preview/e646247cca75cbb45adaca383c10ba55c68f33ab59223e6d9c2a0d23681c3c2d/inf/wTnSj79UI-oWQb0P5XTUS5c_i55qHjso_M8BvnA3f6fsWYXh7ON0uIYKjk_Mcl2MWhGeLZfwhdcHPCd0tO_PQg%3D%3D?uid=728522147&filename=art1.webp&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=728522147&tknv=v2&size=1063x1777">
+                    </div>
+
+                    <div class="block-action-bar">
+                        <button class="btn"> Подобнее </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+<div th:replace="fragments/footer"></div>
+
+        <script src="script/auth.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+
+.comments {
+    margin-bottom: 100px;
+}
+
+
+.comment{
+    padding: 10px 10px;
+    height: 140px;
+    margin: 10px 20px;
+    background-color: #001D3D;
+    color: #eeeeee;
+    box-shadow: 2px 3px 5px 3px black;
+}
+
+.like {
+    padding-right: 10px;
+}
+
+.unlike {
+    padding: 0px 10px;
+}
+
+.like:active {
+    content: url("../image/like_yellow.png");
+}
+
+.unlike:active {
+    content: url("../image/unlike_red.png");
+}
+
+.panel_like_dislike {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
